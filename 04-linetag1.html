@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        목록을 만드는 태그
+        ul : 순서가 없는 목록을 만들 때 쓰는 태그
+        ol : 순서가 있는 목록을 만들 때 쓰는 태그
+        dl : 사전 태그
+
+        - dl 태그를 제외한 ul,ol 태그는 안에 반드시 li 태그를 가진다.
+        - 각 목록에 대한 내용은 li 태그를 통해 구현한다.
+
+        각 태그의 속성
+        - type : 숫자/문자의 종류
+        - start : 시작 번호 (ul은 지원안함)
+        - reversed : 번호를 역순으로 표시 (ul은 지원안함)
+    -->
+    <ul type="square">
+        <li>첫번째 문단
+            <ul>
+                <li>첫번째 안문단</li>
+                <li>두번째 안문단</li>
+                <li>세번째 안문단</li>
+            </ul>
+        </li>
+        <li>두번째 문단</li>
+        <li>세번째 문단</li>
+    </ul>
+    <ol>
+        <li>첫번째 문단</li>
+        <ol type="a" start="3" reversed>
+            <li>첫번째 안문단</li>
+            <li>두번째 안문단</li>
+            <li>세번째 안문단</li>
+        </ol>
+        <li>두번째 문단
+            <ul>
+                <li>첫번째 안문단</li>
+                <li>두번째 안문단</li>
+                <li>세번째 안문단</li>
+            </ul>
+        </li>
+        <li>세번째 문단</li>
+    </ol>
+    <dl>
+        <dt>사전 제목1</dt>
+        <dd>사전 내용1</dd>
+    </dl>
+</body>
+</html>
